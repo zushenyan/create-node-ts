@@ -16,6 +16,7 @@
     "lint:eslint:fix": "yarn run lint:eslint --fix",
     "lint:fix": "yarn run lint:tsc && yarn run lint:eslint:fix",
     "test": "jest",
+    "test:watch": "jest --watch",
     "test:ci": "jest --coverage --ci"
   },
   "devDependencies": {
