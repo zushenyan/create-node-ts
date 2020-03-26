@@ -12,7 +12,7 @@
     "clean": "rm -rf ./dist",
     "build": "yarn run clean && tsc",
     "lint:tsc": "tsc -noEmit",
-    "lint:eslint": "eslint src/**/*.ts --fix",
+    "lint:eslint": "eslint src/**/*.ts --quiet --fix",
     "lint:eslint:fix": "yarn run lint:eslint --fix",
     "lint:fix": "yarn run lint:tsc && yarn run lint:eslint:fix",
     "test": "jest",
