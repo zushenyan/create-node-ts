@@ -11,8 +11,10 @@
   "scripts": {
     "clean": "rm -rf ./dist",
     "build": "yarn run clean && tsc",
-    "lint": "eslint src/**/*.ts",
-    "lint:fix": "yarn run lint --fix",
+    "lint:tsc": "tsc -noEmit",
+    "lint:eslint": "eslint src/**/*.ts --fix",
+    "lint:eslint:fix": "yarn run lint:eslint --fix",
+    "lint:fix": "yarn run lint:tsc && yarn run lint:eslint:fix",
     "test": "jest",
     "test:ci": "jest --coverage --ci"
   },
