@@ -1,3 +1,3 @@
-# create-node-ts
+# starter-node-ts
 
 A repo for initializing `nodejs` + `typescript` project with ease!
