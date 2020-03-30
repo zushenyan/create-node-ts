@@ -10,7 +10,7 @@
   "author": "Andrew Yan <zushenyan@gmail.com>",
   "scripts": {
     "clean": "rm -rf ./dist",
-    "build": "yarn run clean && tsc",
+    "build": "yarn run clean && yarn run lint:fix && yarn run test:ci && tsc",
     "lint:tsc": "tsc -noEmit",
     "lint:eslint": "eslint src/**/*.ts --quiet --fix",
     "lint:eslint:fix": "yarn run lint:eslint --fix",
